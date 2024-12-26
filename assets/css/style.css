@@ -9518,7 +9518,7 @@ html .ui-button.ui-state-disabled:active {
 .Strategy{
   color:#ffffff;
   /* font-family: "Archivo Black", sans-serif; */
-  font-size: 70px;
+  font-size: 70px !important;
   /* background-color: #000000; */
   animation: slideUp 0.5s ease-out, moveLeft 2s 0.5s ease-in-out;
   animation-fill-mode: forwards;
@@ -9527,7 +9527,7 @@ html .ui-button.ui-state-disabled:active {
 .Reach{
   color:#ffffff;
   /* font-family: "Archivo Black", sans-serif; */
-  font-size: 70px;
+  font-size: 70px !important;
   /* background-color: #000000; */
   animation: slideUp 0.5s ease-in-out;
   line-height: 1;
