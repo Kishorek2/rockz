@@ -5300,7 +5300,7 @@ label {
   height: 626px;
   width: 626px;
   border-radius: 50%;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 74, 23, 0.8) 0%, rgba(255, 74, 23, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(255, 74, 23, 0) 100%);
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
