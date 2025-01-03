@@ -199,8 +199,8 @@ kbd {
 .rockz{
   text-align: center;
     position: absolute;
-    left: 19px;
-    bottom: 20px;
+    margin-left: 80px;
+    margin-top: 24px;
     color: #ffffff;
     display: none;
     cursor: pointer;
@@ -211,8 +211,35 @@ kbd {
   -webkit-transform: scale(1.5); 
   transform: scale(0.8); 
   font-family: system-ui;
-  font-variant: small-caps
+  font-variant: small-caps;
 }
+
+.new-logo{
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.new-rockz{
+  text-align: center;
+    position: absolute;
+    margin-left: 43px;
+    margin-top: -26px;
+    /* margin-bottom: 20px; */
+    color: #ffffff;
+    cursor: pointer;
+} 
+
+.new-logo:hover{
+  -ms-transform: scale(2); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(0.8); 
+  font-family: system-ui;
+  font-variant: small-caps;
+}
+
 
 .logo1{
   width: 100%;
@@ -3888,6 +3915,8 @@ label {
 .industry{
   text-align: center;
   padding-bottom: 10px;
+  /* width: 64px;
+  height: 64px; */
 }
 
 .DMA:hover{
@@ -9585,3 +9614,6 @@ html .ui-button.ui-state-disabled:active {
   animation-delay: 1s; /* Wait for 3 seconds before showing */
   margin-top: 15px;
 }
+
+
+
