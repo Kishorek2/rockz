@@ -96,6 +96,7 @@ rockz.style.display = 'block';
 rockz.style.fontFamily = 'Lumanosimo, cursive'; 
 rockz.style.fontSize = '30px'; 
 rockz.style.fontweight = '1000';
+//rockz.style.fontvariant = small-caps;
 });
 
 logo.addEventListener('mouseout', () => {
@@ -103,6 +104,7 @@ rockz.style.transform = 'scale(1)';
 rockz.style.display = 'none';
 });
 
+ 
   /*--------------------------------------------------------------
     1. Preloader
   --------------------------------------------------------------*/
@@ -855,3 +857,40 @@ rockz.style.display = 'none';
   }
   document.addEventListener('mousemove', cursorMovingAnimation);
 })(jQuery); // End of use strict
+
+
+
+// Select all .new-logo elements and their corresponding .new-rockz elements
+const newLogos = document.querySelectorAll('.new-logo');
+const newRockzElements = document.querySelectorAll('.new-rockz');
+
+// Loop through each .new-logo and .new-rockz pair
+newLogos.forEach((newLogo, index) => {
+  const newRockz = newRockzElements[index];
+
+  // Initial styles for .new-rockz
+  newRockz.style.display = 'none';
+  // newRockz.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+
+  // Add mouseover event for the new-logo
+  newLogo.addEventListener('mouseover', () => {
+    newRockz.style.display = 'block';
+    // newRockz.style.transform = 'scale(0.5)';
+    // newRockz.style.opacity = '1';
+    newRockz.style.fontFamily = 'Lumanosimo, cursive';
+    newRockz.style.fontSize = '22px';
+    newRockz.style.fontWeight = '400';
+  });
+
+  // Add mouseout event for the new-logo
+  newLogo.addEventListener('mouseout', () => {
+    // newRockz.style.transform = 'scale(1)';
+    // newRockz.style.opacity = '0';
+
+    // Delay hiding the element until after the transition
+    setTimeout(() => {
+      newRockz.style.display = 'none';
+    }, 300); // Match the transition duration
+  });
+});
+
