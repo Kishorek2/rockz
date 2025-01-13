@@ -2517,7 +2517,7 @@ label {
 }
 @media screen and (max-width: 991px) {
   .cs-section_heading.cs-style1 .cs-section_title {
-    font-size: 36px;
+    font-size: 31px;
   }
   .cs-section_heading.cs-style1 .cs-section_subtitle {
     font-size: 16px;
@@ -9575,6 +9575,22 @@ html .ui-button.ui-state-disabled:active {
   animation-fill-mode: forwards;
 }
 
+.DS{
+  width: 18rem;
+}
+
+.CD{
+  width: 18rem;
+}
+
+.EO{
+  width: 18rem;
+}
+
+.AR{
+  width: 18rem;
+}
+
 @keyframes slideUp {
 
   0% { 
@@ -9647,40 +9663,90 @@ html .ui-button.ui-state-disabled:active {
   .SP{
     height: 20px;
   }
+
+  .DS{
+    width: 23rem;
+  }
+
+  .CD{
+    width: 24rem;
+  }
+
+  .EO{
+    width: 23rem;
+  }
+  
+  .AR{
+    width: 24rem;
+  }
 } 
 
 .tools{
   width: 150px;
 }
 
-input[type="checkbox"] {
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-  appearance: none; /* Remove default styles */
-  background-color: #fff;
-  /* border: 2px solid #ccc;
-  border-radius: 4px; */
-  outline: none;
-  /* transition: background-color 0.3s, border-color 0.3s; */
+
+input[type="checkbox"].services {
+  accent-color: #9c27b0; /* Change this to your desired color */
 }
 
-/* Change the tick color when the checkbox is checked */
-input[type="checkbox"]:checked {
-  background-color: #9c27b0; /* Green background for the tick */
-  border-color: #9c27b0;
-  /* position: relative; */
+input[type="checkbox"]#Selectallservices {
+  accent-color: #9c27b0; /* Change this to your desired color */
 }
 
-/* Add the tick mark when the checkbox is checked */
-input[type="checkbox"]:checked::after {
-  content: '✔'; /* Unicode checkmark */
-  color: white;
-  font-size: 14px;
-  /* position: absolute;
+
+.cs-portfolio_bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; /* Ensures it scales within its container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .cs-slider .cs-slide {
+      padding: 10px; /* Adds some spacing between slides */
+  }
+
+  .cs-portfolio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; /* Centers the content */
+  }
+
+  .cs-portfolio_info {
+      padding: 15px;
+  }
+
+  .cs-portfolio_bg {
+      width: 90%; /* Reduces the image size on smaller screens */
+      height: 180px; /* Adjust height for a consistent appearance */
+      max-width: 100%; /* Prevents images from exceeding container width */
+  }
+}
+
+.cs-portfolio_info_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   top: 0;
-  left: 4px; */
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Example background color */
+  transition: all 0.3s ease; /* Smooth transition for responsiveness */
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .cs-portfolio_info_bg {
+      width: 80%; /* Decrease width to 80% on mobile */
+      height: 80%; /* Decrease height to 80% on mobile */
+      top: 10%; /* Center it vertically */
+      left: 10%; /* Center it horizontally */
+  }
+}
+
 
 /* @media screen and (min-width: 1202px) {
   .cs-hero_subtitle.hero-para{
