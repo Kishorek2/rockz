@@ -93,9 +93,11 @@ const rockz = document.querySelector('.rockz');
 logo.addEventListener('mouseover', () => {
 rockz.style.transform = 'scale(0.5)';
 rockz.style.display = 'block';
-rockz.style.fontFamily = 'Lumanosimo, cursive'; 
-rockz.style.fontSize = '30px'; 
-rockz.style.fontweight = '1000';
+rockz.style.fontFamily = "Eagle Lake", serif; 
+// rockz.style.fontSize = '30px'; 
+// rockz.style.fontweight = '1000';
+// rockz.style.fontSize = '100px';
+rockz.style.fontWeight = '400';
 //rockz.style.fontvariant = small-caps;
 });
 
@@ -877,8 +879,8 @@ newLogos.forEach((newLogo, index) => {
     newRockz.style.display = 'block';
     // newRockz.style.transform = 'scale(0.5)';
     // newRockz.style.opacity = '1';
-    newRockz.style.fontFamily = 'Lumanosimo, cursive';
-    newRockz.style.fontSize = '22px';
+    newRockz.style.fontFamily = "Eagle Lake", serif;
+    newRockz.style.fontSize = '25px';
     newRockz.style.fontWeight = '400';
   });
 
