@@ -78,7 +78,7 @@
         <h1 class="cs-hero_title text-end wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s">
           Contact 
         </h1>
-        <div class="cs-hero_subtitle text-end">Get your business noticed with top-ranking SEO strategies that drive traffic and generate leads. Start growing your online presence today!</div>
+        <div class="cs-hero_subtitle text-end">Have a question or ready to start your next project? Reach out to Rockz Digi Solutions and let’s make your business shine online.</div>
         <a href="contact.html" class="cs-text_btn">
           <span>Let’s talk</span>
           <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,8 +136,9 @@
   </div>
   </section>
 
+
   <div class="cs-height_150 cs-height_lg_80"></div>
-  <div class="container">
+  <div class="container" id="c-form">
     <div class="row">
       <div class="col-lg-6">
         <div class="cs-section_heading cs-style1">
@@ -189,13 +190,13 @@
             <label class="cs-primary_color">Select Services*</label>
           </div>
             <div class="col-sm-12">
-            <label><input type="checkbox" name="services[]" value="SEO"> SEO</label>
-        <label><input type="checkbox" name="services[]" value="Social Media Marketing"> Social Media Marketing</label>
-        <label><input type="checkbox" name="services[]" value="Paid Media Marketing"> Search Engine Marketing</label>
-        <label><input type="checkbox" name="services[]" value="Content Marketing"> Content Marketing</label>
-        <label><input type="checkbox" name="services[]" value="Email Marketing"> Email Marketing</label>
-        <label><input type="checkbox" name="services[]" value="Other"> Web Design & Development</label>
-        <label><input type="checkbox" name="services[]" value="Select All"> Select All</label>
+        <label><input type="checkbox" name="services[]" value="SEO" class="services"> &nbsp;SEO&nbsp;</label>
+        <label><input type="checkbox" name="services[]" value="Social Media Marketing" class="services"> &nbsp;Social Media Marketing &nbsp;</label>
+        <label><input type="checkbox" name="services[]" value="Paid Media Marketing" class="services"> &nbsp;Search Engine Marketing &nbsp;</label>
+        <label><input type="checkbox" name="services[]" value="Content Marketing" class="services"> &nbsp;Content Marketing &nbsp;</label>
+        <label><input type="checkbox" name="services[]" value="Email Marketing" class="services"> &nbsp;Email Marketing &nbsp;</label>
+        <label><input type="checkbox" name="services[]" value="Other" class="services"> &nbsp;Web Design & Development &nbsp;</label>
+        <label><input type="checkbox" name="services[]" value="Select All" id="Selectallservices"> &nbsp;Select All &nbsp;</label>
             <div class="cs-height_20 cs-height_lg_20"></div>
           </div>
           <div class="col-lg-12">
@@ -204,7 +205,7 @@
             <div class="cs-height_25 cs-height_lg_25"></div>
           </div>
           <div class="col-lg-12">
-            <button class="cs-btn cs-style1" type="submit">
+            <button class="cs-btn cs-style1" type="submit" >
               <span>Send Message</span>
               <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"/>
@@ -213,6 +214,7 @@
             <div id="cs-result"></div>
           </div>
         </form>
+        
       </div>
       
     </div>
@@ -330,5 +332,25 @@
   <script src="assets/js/plugins/wow.min.js"></script>
   <script src="assets/js/plugins/gsap.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    // function save(){
+    //   alert("knj");
+    //     $.ajax({
+    //             url : './process-form.php',
+    //             type : 'post',
+    //             data : $('#cs-form').serialize(),
+    //             success : function(data){
+    //                 if(data.trim()=='already_exits'){
+    //                     alert('Dear Canditate, This Mobile Number Already Exits. Please try to login already registered?. Thank you.');
+    //                 }else if(data.trim()=='empty'){
+    //                     alert('Dear Candidate, Enter valid mobile number. Thank you.');
+    //                 }
+    //                 else if(data.trim()=='false'){
+    //                     alert('Dear Canditate, mobile number is invalid. Thank you.');
+    //                 }
+    //             }
+    //         });
+    //       }
+  </script>
 </body>
 </html>
