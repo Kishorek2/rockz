@@ -9649,9 +9649,37 @@ html .ui-button.ui-state-disabled:active {
   }
 } 
 
-
 .tools{
   width: 150px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  appearance: none; /* Remove default styles */
+  background-color: #fff;
+  /* border: 2px solid #ccc;
+  border-radius: 4px; */
+  outline: none;
+  /* transition: background-color 0.3s, border-color 0.3s; */
+}
+
+/* Change the tick color when the checkbox is checked */
+input[type="checkbox"]:checked {
+  background-color: #9c27b0; /* Green background for the tick */
+  border-color: #9c27b0;
+  /* position: relative; */
+}
+
+/* Add the tick mark when the checkbox is checked */
+input[type="checkbox"]:checked::after {
+  content: '✔'; /* Unicode checkmark */
+  color: white;
+  font-size: 14px;
+  /* position: absolute;
+  top: 0;
+  left: 4px; */
 }
 
 /* @media screen and (min-width: 1202px) {
