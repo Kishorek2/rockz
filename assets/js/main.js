@@ -93,8 +93,8 @@ const rockz = document.querySelector('.rockz');
 logo.addEventListener('mouseover', () => {
 rockz.style.transform = 'scale(0.5)';
 rockz.style.display = 'block';
-rockz.style.fontFamily = "Eagle Lake", serif; 
-// rockz.style.fontSize = '30px'; 
+rockz.style.fontFamily = "Merienda", serif; 
+rockz.style.fontSize = '30px'; 
 // rockz.style.fontweight = '1000';
 // rockz.style.fontSize = '100px';
 rockz.style.fontWeight = '400';
@@ -879,8 +879,8 @@ newLogos.forEach((newLogo, index) => {
     newRockz.style.display = 'block';
     // newRockz.style.transform = 'scale(0.5)';
     // newRockz.style.opacity = '1';
-    newRockz.style.fontFamily = "Eagle Lake", serif;
-    newRockz.style.fontSize = '25px';
+    newRockz.style.fontFamily = "Merienda", serif;
+    newRockz.style.fontSize = '28px';
     newRockz.style.fontWeight = '400';
   });
 
@@ -893,6 +893,35 @@ newLogos.forEach((newLogo, index) => {
     setTimeout(() => {
       newRockz.style.display = 'none';
     }, 300); // Match the transition duration
+  });
+});
+
+
+
+// Get the "Select All" checkbox
+const selectAllCheckbox = document.getElementById('Selectallservices');
+// Get all individual checkboxes
+const itemCheckboxes = document.querySelectorAll('.services');
+
+// Add event listener for "Select All" checkbox
+selectAllCheckbox.addEventListener('change', function () {
+  // Set all checkboxes to match the "Select All" checkbox
+  itemCheckboxes.forEach(checkbox => {
+    checkbox.checked = this.checked;
+  });
+});
+
+// Add event listeners for individual checkboxes
+itemCheckboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', function () {
+    // If not all checkboxes are selected, uncheck "Select All"
+    if (![...itemCheckboxes].every(cb => cb.checked)) {
+      selectAllCheckbox.checked = false;
+    }
+    // If all checkboxes are selected, check "Select All"
+    else if ([...itemCheckboxes].every(cb => cb.checked)) {
+      selectAllCheckbox.checked = true;
+    }
   });
 });
 
