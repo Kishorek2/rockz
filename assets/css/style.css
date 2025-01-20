@@ -9758,13 +9758,13 @@ input[type="checkbox"]#Selectallservices {
 
 @media screen and (max-width:768px){
   .logo{
-    width:100px;
+    width:70px;
   }
 }
 
 @media screen and (max-width:430px){
   .logo{
-    width:70px;
+    width:90px;
     height: auto;
   }
 }
