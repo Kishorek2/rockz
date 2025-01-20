@@ -9782,6 +9782,39 @@ input[type="checkbox"]#Selectallservices {
 }
 
 
+
+@media screen and (max-width:1024px){
+  .new-logo{
+    width:120px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .new-logo{
+    width:100px;
+  }
+}
+
+@media screen and (max-width:430px){
+  .new-logo{
+    width:90px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:430px){
+  .new-logo{
+    width:100px;
+  }
+}
+
+@media screen and (max-width:375px){
+  .new-logo{
+    width:80px;
+  }
+}
+
+
 /* @media screen and (min-width: 1202px) {
   .cs-hero_subtitle.hero-para{
     margin-left: auto;
