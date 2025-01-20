@@ -9750,6 +9750,37 @@ input[type="checkbox"]#Selectallservices {
   }
 }
 
+@media screen and (max-width:1024px){
+  .logo{
+    width:120px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .logo{
+    width:100px;
+  }
+}
+
+@media screen and (max-width:430px){
+  .logo{
+    width:90px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:430px){
+  .logo{
+    width:100px;
+  }
+}
+
+@media screen and (max-width:375px){
+  .logo{
+    width:80px;
+  }
+}
+
 
 /* @media screen and (min-width: 1202px) {
   .cs-hero_subtitle.hero-para{
