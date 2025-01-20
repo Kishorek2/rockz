@@ -9750,6 +9750,14 @@ input[type="checkbox"]#Selectallservices {
   }
 }
 
+@media screen and (max-width:1024px){
+  .logo{
+    width:80%;
+  }
+}
+
+
+
 
 
 
