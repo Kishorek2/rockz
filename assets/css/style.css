@@ -9752,13 +9752,13 @@ input[type="checkbox"]#Selectallservices {
 
 @media screen and (max-width:1024px){
   .logo{
-    width:120px;
+    width:100px;
   }
 }
 
 @media screen and (max-width:768px){
   .logo{
-    width:70px;
+    width:100px;
   }
 }
 
