@@ -9750,6 +9750,31 @@ input[type="checkbox"]#Selectallservices {
   }
 }
 
+@media screen and (max-width:430px){
+  .logo{
+    width:40px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:375px){
+  .logo{
+    width:40px;
+  }
+}
+
+@media screen and (max-width:430px){
+  .new-logo{
+    width:40px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:375px){
+  .new-logo{
+    width:40px;
+  }
+}
 
 
 
