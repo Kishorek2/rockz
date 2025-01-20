@@ -9764,14 +9764,8 @@ input[type="checkbox"]#Selectallservices {
 
 @media screen and (max-width:430px){
   .logo{
-    width:90px;
+    width:70px;
     height: auto;
-  }
-}
-
-@media screen and (max-width:430px){
-  .logo{
-    width:80px;
   }
 }
 
@@ -9799,12 +9793,6 @@ input[type="checkbox"]#Selectallservices {
   .new-logo{
     width:90px;
     height: auto;
-  }
-}
-
-@media screen and (max-width:430px){
-  .new-logo{
-    width:100px;
   }
 }
 
