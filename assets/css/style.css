@@ -9776,6 +9776,32 @@ input[type="checkbox"]#Selectallservices {
   .Reach{
     font-size: 55px;
   }
+
+  @keyframes slideUp {
+
+    0% { 
+      opacity: 0;
+      transform: translateY(100px); 
+    } 
+  
+    100% { 
+      opacity: 1;
+      transform: translateY(0); 
+    } 
+  
+  }
+  
+  @keyframes moveLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-7%); }
+  
+  }
+  
+  @keyframes moveRight {
+    from { transform: translateX(0); }
+    to { transform: translateX(10%); }
+  
+  }
 }
 
 @media screen and (max-width:375px){
@@ -9802,8 +9828,32 @@ input[type="checkbox"]#Selectallservices {
   .Reach{
     font-size: 55px;
   }
-}
+  @keyframes slideUp {
 
+    0% { 
+      opacity: 0;
+      transform: translateY(100px); 
+    } 
+  
+    100% { 
+      opacity: 1;
+      transform: translateY(0); 
+    } 
+  
+  }
+  
+  @keyframes moveLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-7%); }
+  
+  }
+  
+  @keyframes moveRight {
+    from { transform: translateX(0); }
+    to { transform: translateX(10%); }
+  
+  }
+}
 .footer-tagline{
   color: #ffffff;
   margin-left: 8px;
