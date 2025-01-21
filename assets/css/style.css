@@ -9775,7 +9775,7 @@ input[type="checkbox"]#Selectallservices {
     margin-left: 8px;
   }
   .Strategy{
-    font-size: 63px;
+    font-size: 20px;
     margin-top: 10px;
   }
   .Reach{
@@ -9811,7 +9811,7 @@ input[type="checkbox"]#Selectallservices {
 
 @media screen and (max-width:390px){
   .Strategy{
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 10px;
   }
   .Reach{
