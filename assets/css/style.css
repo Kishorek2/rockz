@@ -9755,11 +9755,17 @@ input[type="checkbox"]#Selectallservices {
     width:40px;
     height: auto;
   }
+  .rockz{
+    display: none;
+  }
 }
 
 @media screen and (max-width:375px){
   .logo{
     width:40px;
+  }
+   .rockz{
+    display: none;
   }
 }
 
@@ -9768,11 +9774,17 @@ input[type="checkbox"]#Selectallservices {
     width:40px;
     height: auto;
   }
+   .new-rockz{
+    display: none;
+  }
 }
 
 @media screen and (max-width:375px){
   .new-logo{
     width:40px;
+  }
+   .new-rockz{
+    display: none;
   }
 }
 
