@@ -9779,6 +9779,10 @@ input[type="checkbox"]#Selectallservices {
    .new-rockz{
     display: none;
   }
+  .footer-tagline{
+    color: #ffffff;
+    margin-left: 8px;
+  }
 }
 
 @media screen and (max-width:375px){
@@ -9788,8 +9792,16 @@ input[type="checkbox"]#Selectallservices {
    .new-rockz{
     display: none;
   }
+  .footer-tagline{
+    color: #ffffff;
+    margin-left: 8px;
+  }
 }
 
+.footer-tagline{
+  color: #ffffff;
+  margin-left: 8px;
+}
 
 
 /* @media screen and (min-width: 1202px) {
