@@ -9872,6 +9872,17 @@ input[type="checkbox"]#Selectallservices {
   }
 }
 
+@media screen and (max-width:390px){
+  .Strategy{
+    font-size: 58px;
+    margin-top: 10px;
+  }
+  .Reach{
+    font-size: 58px;
+  }
+}
+
+
 
 /* @media screen and (min-width: 1202px) {
   .cs-hero_subtitle.hero-para{
