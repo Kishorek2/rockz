@@ -9757,6 +9757,7 @@ input[type="checkbox"]#Selectallservices {
   }
   .rockz{
     display: none;
+    pointer-events: none;
   }
 }
 
@@ -9766,6 +9767,7 @@ input[type="checkbox"]#Selectallservices {
   }
    .rockz{
     display: none;
+     pointer-events: none;
   }
 }
 
@@ -9776,6 +9778,7 @@ input[type="checkbox"]#Selectallservices {
   }
    .new-rockz{
     display: none;
+     pointer-events: none;
   }
 }
 
@@ -9785,6 +9788,7 @@ input[type="checkbox"]#Selectallservices {
   }
    .new-rockz{
     display: none;
+     pointer-events: none;
   }
 }
 
