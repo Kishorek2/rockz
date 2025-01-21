@@ -9860,6 +9860,17 @@ input[type="checkbox"]#Selectallservices {
   }
 }
 
+@media screen and (max-width:344px){
+
+    .Strategy{
+    font-size: 47px;
+    margin-top: 60px;
+  }
+    
+    .Reach{
+    font-size: 48px;
+  }
+}
 
 
 /* @media screen and (min-width: 1202px) {
