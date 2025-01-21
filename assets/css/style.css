@@ -9882,6 +9882,23 @@ input[type="checkbox"]#Selectallservices {
   }
 }
 
+@media screen and (max-width:768px){
+
+   .Strategy{
+    font-size: 58px;
+    margin-top: 60px;
+  }
+  
+  .Reach{
+    font-size: 58px;
+    margin-top: 40px;
+   }
+
+   .rockz{
+    display: none !important;
+   }
+  }
+
 
 
 /* @media screen and (min-width: 1202px) {
