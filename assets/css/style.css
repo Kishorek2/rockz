@@ -9757,21 +9757,7 @@ input[type="checkbox"]#Selectallservices {
   }
   .rockz{
     display: none !important;
-/*     pointer-events: none; */
   }
-}
-
-@media screen and (max-width:375px){
-  .logo{
-    width:40px;
-  }
-   .rockz{
-    display: none !important;
-/*      pointer-events: none; */
-  }
-}
-
-@media screen and (max-width:430px){
   .new-logo{
     width:40px;
     height: auto;
@@ -9783,9 +9769,19 @@ input[type="checkbox"]#Selectallservices {
     color: #ffffff;
     margin-left: 8px;
   }
+  .Strategy{
+    font-size: 55px;
+    margin-top: 170px;
+  }
 }
 
 @media screen and (max-width:375px){
+  .logo{
+    width:40px;
+  }
+   .rockz{
+    display: none !important;
+  }
   .new-logo{
     width:40px;
   }
@@ -9796,11 +9792,15 @@ input[type="checkbox"]#Selectallservices {
     color: #ffffff;
     margin-left: 8px;
   }
+  .Strategy{
+    font-size: 55px;
+    margin-top: 170px;
+  }
 }
 
 .footer-tagline{
   color: #ffffff;
-  margin-left: 6px;
+  margin-left: 8px;
 }
 
 
