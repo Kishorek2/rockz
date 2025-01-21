@@ -9770,11 +9770,11 @@ input[type="checkbox"]#Selectallservices {
     margin-left: 8px;
   }
   .Strategy{
-    font-size: 55px;
-    margin-top: 170px;
+    font-size: 63px;
+    margin-top: 10px;
   }
   .Reach{
-    font-size: 55px;
+    font-size: 67px;
   }
 
   @keyframes slideUp {
@@ -9801,6 +9801,16 @@ input[type="checkbox"]#Selectallservices {
     from { transform: translateX(0); }
     to { transform: translateX(10%); }
   
+  }
+}
+
+@media screen and (max-width:390px){
+  .Strategy{
+    font-size: 58px;
+    margin-top: 10px;
+  }
+  .Reach{
+    font-size: 58px;
   }
 }
 
@@ -9854,6 +9864,7 @@ input[type="checkbox"]#Selectallservices {
   
   }
 }
+
 .footer-tagline{
   color: #ffffff;
   margin-left: 8px;
