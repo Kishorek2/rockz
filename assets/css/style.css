@@ -9791,7 +9791,7 @@ input[type="checkbox"]#Selectallservices {
 /* Responsive Design */
 @media (max-width: 992px) {
   .Strategy, .Reach {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   .hero-para {
@@ -9805,11 +9805,16 @@ input[type="checkbox"]#Selectallservices {
   .cs-height_lg_80 {
     height: 60px;
   }
+
+  .rockz{
+    margin-left: 20px;
+    margin-top: -20px;
+  }
 }
 
 @media (max-width: 768px) {
   .Strategy, .Reach {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
 
   .hero-para {
@@ -9849,9 +9854,9 @@ input[type="checkbox"]#Selectallservices {
     font-size: 1.8rem;
   }
 
-  .hero-para {
+/*   .hero-para {
     font-size: 0.9rem;
-  }
+  } */
 
   .cs-height_40,
   .cs-height_lg_80 {
