@@ -9850,8 +9850,12 @@ input[type="checkbox"]#Selectallservices {
 }
 
 @media (max-width: 576px) {
-  .Strategy, .Reach {
-    font-size: 4rem;
+  .Strategy{
+    font-size: 3.6rem;
+  }
+
+  .Reach {
+    font-size: 3.6rem;
   }
 
 /*   .hero-para {
