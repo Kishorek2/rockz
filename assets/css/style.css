@@ -9762,8 +9762,6 @@ input[type="checkbox"]#Selectallservices {
 }
 
 
-
-
 /* General Reset */
 
 .cs-hero_text {
@@ -9806,10 +9804,11 @@ input[type="checkbox"]#Selectallservices {
     height: 60px;
   }
 
-  .rockz{
+.rockz{
     margin-left: 20px;
     margin-top: -20px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -9850,18 +9849,13 @@ input[type="checkbox"]#Selectallservices {
 }
 
 @media (max-width: 576px) {
-  .Strategy{
-    font-size: 3.4rem;
-    margin-top: 100px;
+  .Strategy, .Reach {
+    font-size: 1.9rem;
   }
 
-  .Reach {
-    font-size: 3.6rem;
-  }
-
-/*   .hero-para {
+  .hero-para {
     font-size: 0.9rem;
-  } */
+  }
 
   .cs-height_40,
   .cs-height_lg_80 {
@@ -9869,7 +9863,7 @@ input[type="checkbox"]#Selectallservices {
   }
 
   .R{
-    width: 17%;;
+    width: 11%;;
   }
 
   .logo{
@@ -9898,7 +9892,6 @@ input[type="checkbox"]#Selectallservices {
   }
   
 }
-
 
 /* @media screen and (min-width: 1202px) {
   .cs-hero_subtitle.hero-para{
