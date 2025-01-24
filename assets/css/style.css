@@ -7241,7 +7241,7 @@ label {
   bottom: 0;
   width: 100%;
   z-index: 3;
-  padding: 30px 25px;
+  /* padding: 30px 25px; */
 }
 .cs-team.cs-style1 .cs-member_social {
   position: absolute;
@@ -9786,6 +9786,70 @@ input[type="checkbox"]#Selectallservices {
     vertical-align: middle;
 }
 
+.cs-member_info{
+  position: absolute;
+  bottom: 1px;
+  right: 10px;
+            background: rgba(255, 255, 255, 0);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 320px !important;
+            margin-left: -10px;
+            height: 50px;
+}
+
+.cs-member_name{
+  margin-bottom: -2px !important;
+  text-align: center;
+  margin: 0 40px 20px 0;
+}
+
+.cs-member_designation{
+  color: #ffffff; 
+  font-weight: bold;
+  text-align: center;
+  margin: 0 40px 20px 0;
+}
+
+@media screen and (max-width: 1900px){
+  
+  .cs-member_name {
+    margin: 0 0px 20px 0;
+}
+
+.cs-member_designation{
+  margin: 0 0px 20px 0;
+}
+}
+
+@media screen and (max-width: 1199px){
+  
+  .cs-member_name {
+    margin: 0 40px 20px 0;
+}
+
+.cs-member_designation{
+  margin: 0 40px 20px 0;
+}
+}
+
+
+@media screen and (max-width: 1380px){
+  
+  .cs-member_name {
+    margin: 0 40px 20px 0;
+}
+
+.cs-member_designation{
+  margin: 0 40px 20px 0;
+}
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
   .Strategy, .Reach {
@@ -9814,6 +9878,14 @@ input[type="checkbox"]#Selectallservices {
 @media (max-width: 768px) {
   .Strategy, .Reach {
     font-size: 3.6rem;
+  }
+
+  .rockz{
+    display: none !important;
+  }
+
+  .new-rockz{
+    display: none !important;
   }
 
   .hero-para {
@@ -9857,6 +9929,14 @@ input[type="checkbox"]#Selectallservices {
     font-size: 0.9rem;
   }
 
+  .rockz{
+    display: none !important;
+  }
+
+  .new-rockz{
+    display: none !important;
+  }
+
   .cs-height_40,
   .cs-height_lg_80 {
     height: 80px;
@@ -9890,8 +9970,17 @@ input[type="checkbox"]#Selectallservices {
     color: #ffffff;
     margin-left: 8px;
   }
+
+.cs-member_info{
+  width: 450px !important;
+}
+}
+
+@media (max-width: 1900px){
   
 }
+
+
 
 /* @media screen and (min-width: 1202px) {
   .cs-hero_subtitle.hero-para{
@@ -9900,4 +9989,3 @@ input[type="checkbox"]#Selectallservices {
   }
   
 } */
-
