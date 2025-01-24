@@ -701,118 +701,118 @@ rockz.style.display = 'none';
     }
   }
 
-  /*--------------------------------------------------------------
-    21. Dynamic contact form
-  --------------------------------------------------------------*/
-  function ecommerce() {
-    // Star Rating Input
-    $('.cs-input_rating i').on('click', function () {
-      $(this).siblings().removeClass('fa-solid');
-      $(this).addClass('fa-solid').prevAll().addClass('fa-solid');
-    });
-    // Product Single Slider
-    $('.cs-single_product_thumb').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      asNavFor: '.cs-single_product_nav',
-    });
+  // /*--------------------------------------------------------------
+  //   21. Dynamic contact form
+  // --------------------------------------------------------------*/
+  // function ecommerce() {
+  //   // Star Rating Input
+  //   $('.cs-input_rating i').on('click', function () {
+  //     $(this).siblings().removeClass('fa-solid');
+  //     $(this).addClass('fa-solid').prevAll().addClass('fa-solid');
+  //   });
+  //   // Product Single Slider
+  //   $('.cs-single_product_thumb').slick({
+  //     slidesToShow: 1,
+  //     slidesToScroll: 1,
+  //     arrows: false,
+  //     asNavFor: '.cs-single_product_nav',
+  //   });
 
-    $('.cs-single_product_nav').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: '.cs-single_product_thumb',
-      focusOnSelect: true,
-      arrows: false,
-    });
-    // Check All
-    $('#checkAll').change(function () {
-      var isChecked = $(this).prop('checked');
-      $('table input[type="checkbox"]').prop('checked', isChecked);
-    });
-    // Range Slider
-    if ($.exists('#slider-range')) {
-      $('#slider-range').slider({
-        range: true,
-        min: 0,
-        max: 1000,
-        values: [100, 600],
-        slide: function (event, ui) {
-          $('#amount').val('Price: $' + ui.values[0] + ' - $' + ui.values[1]);
-        },
-      });
-    }
-    if ($.exists('#amount')) {
-      $('#amount').val(
-        'Price: $' +
-          $('#slider-range').slider('values', 0) +
-          ' - $' +
-          $('#slider-range').slider('values', 1),
-      );
-    }
-    // Counter
-    $('.cs-increment').click(function () {
-      var countElement = $(this).siblings('.cs-quantity_input');
-      var count = parseInt(countElement.text());
-      count++;
-      countElement.text(count);
-    });
+  //   $('.cs-single_product_nav').slick({
+  //     slidesToShow: 4,
+  //     slidesToScroll: 1,
+  //     asNavFor: '.cs-single_product_thumb',
+  //     focusOnSelect: true,
+  //     arrows: false,
+  //   });
+  //   // Check All
+  //   $('#checkAll').change(function () {
+  //     var isChecked = $(this).prop('checked');
+  //     $('table input[type="checkbox"]').prop('checked', isChecked);
+  //   });
+  //   // Range Slider
+  //   if ($.exists('#slider-range')) {
+  //     $('#slider-range').slider({
+  //       range: true,
+  //       min: 0,
+  //       max: 1000,
+  //       values: [100, 600],
+  //       slide: function (event, ui) {
+  //         $('#amount').val('Price: $' + ui.values[0] + ' - $' + ui.values[1]);
+  //       },
+  //     });
+  //   }
+  //   if ($.exists('#amount')) {
+  //     $('#amount').val(
+  //       'Price: $' +
+  //         $('#slider-range').slider('values', 0) +
+  //         ' - $' +
+  //         $('#slider-range').slider('values', 1),
+  //     );
+  //   }
+  //   // Counter
+  //   $('.cs-increment').click(function () {
+  //     var countElement = $(this).siblings('.cs-quantity_input');
+  //     var count = parseInt(countElement.text());
+  //     count++;
+  //     countElement.text(count);
+  //   });
 
-    $('.cs-decrement').click(function () {
-      var countElement = $(this).siblings('.cs-quantity_input');
-      var count = parseInt(countElement.text());
-      if (count > 0) {
-        count--;
-        countElement.text(count);
-      }
-    });
-  }
-  /*--------------------------------------------------------------
-    21. Dynamic contact form
-  --------------------------------------------------------------*/
-  if ($.exists('#cs-form')) {
-    const form = document.getElementById('cs-form');
-    const result = document.getElementById('cs-result');
+  //   $('.cs-decrement').click(function () {
+  //     var countElement = $(this).siblings('.cs-quantity_input');
+  //     var count = parseInt(countElement.text());
+  //     if (count > 0) {
+  //       count--;
+  //       countElement.text(count);
+  //     }
+  //   });
+  // }
+  // /*--------------------------------------------------------------
+  //   21. Dynamic contact form
+  // --------------------------------------------------------------*/
+  // if ($.exists('#cs-form')) {
+  //   const form = document.getElementById('cs-form');
+  //   const result = document.getElementById('cs-result');
 
-    form.addEventListener('submit', function (e) {
-      const formData = new FormData(form);
-      e.preventDefault();
-      var object = {};
-      formData.forEach((value, key) => {
-        object[key] = value;
-      });
-      var json = JSON.stringify(object);
-      result.innerHTML = 'Please wait...';
+  //   form.addEventListener('submit', function (e) {
+  //     const formData = new FormData(form);
+  //     e.preventDefault();
+  //     var object = {};
+  //     formData.forEach((value, key) => {
+  //       object[key] = value;
+  //     });
+  //     var json = JSON.stringify(object);
+  //     result.innerHTML = 'Please wait...';
 
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: json,
-      })
-        .then(async response => {
-          let json = await response.json();
-          if (response.status == 200) {
-            result.innerHTML = json.message;
-          } else {
-            console.log(response);
-            result.innerHTML = json.message;
-          }
-        })
-        .catch(error => {
-          console.log(error);
-          result.innerHTML = 'Something went wrong!';
-        })
-        .then(function () {
-          form.reset();
-          setTimeout(() => {
-            result.style.display = 'none';
-          }, 5000);
-        });
-    });
-  }
+  //     fetch('https://api.web3forms.com/submit', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //         Accept: 'application/json',
+  //       },
+  //       body: json,
+  //     })
+  //       .then(async response => {
+  //         let json = await response.json();
+  //         if (response.status == 200) {
+  //           result.innerHTML = json.message;
+  //         } else {
+  //           console.log(response);
+  //           result.innerHTML = json.message;
+  //         }
+  //       })
+  //       .catch(error => {
+  //         console.log(error);
+  //         result.innerHTML = 'Something went wrong!';
+  //       })
+  //       .then(function () {
+  //         form.reset();
+  //         setTimeout(() => {
+  //           result.style.display = 'none';
+  //         }, 5000);
+  //       });
+  //   });
+  // }
 
   /*--------------------------------------------------------------
     22. Cursor Animation
