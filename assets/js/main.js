@@ -924,4 +924,3 @@ itemCheckboxes.forEach(checkbox => {
     }
   });
 });
-
