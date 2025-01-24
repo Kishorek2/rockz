@@ -9974,6 +9974,14 @@ input[type="checkbox"]#Selectallservices {
 .cs-member_info{
   width: 450px !important;
 }
+
+  .cs-member_name {
+  margin: 0px 95px 20px 0;
+}
+
+.cs-member_designation{
+  margin: 0px 95px 20px 0;
+}
 }
 
 @media (max-width: 1900px){
